@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Hero from '@/components/Hero'
 
 export default function Home() {
   return (
-    <main>
-      <h1>Tori training Homepage</h1>
+    <main className="flex flex-col items-center justify-center">
+      <Hero />
     </main>
   )
 }
