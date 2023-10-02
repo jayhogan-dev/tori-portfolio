@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 const Hero = () => {
   return (
-    <section className="flex w-full h-[800px] bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat">
-      <div className="flex flex-col md:flex-row md:justify-between items-center h-[800px] w-full">
+    <section className="flex h-[800px] w-full bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat">
+      <div className="flex h-[800px] w-full flex-col items-center md:flex-row md:justify-between">
         <div className="bg-red-300">
           <h1>Home</h1>
         </div>
