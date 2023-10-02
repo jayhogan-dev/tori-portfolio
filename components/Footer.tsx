@@ -1,9 +1,9 @@
-import Link from "next/link";
+// import Link from "next/link";
 import LightContainer from "./containers/Light";
 
 // SVGR
-import LinkedIn from "@/public/social-icons/linkedin.svg";
-import Github from "@/public/social-icons/github.svg";
+// import LinkedIn from "@/public/social-icons/linkedin.svg";
+// import Github from "@/public/social-icons/github.svg";
 
 const Footer = () => {
   return (
@@ -13,7 +13,8 @@ const Footer = () => {
           &copy; 2023 Tori. All rights reserved
         </p>
         <div className="flex items-center justify-center gap-5">
-          <Link
+          <p>Add any Socials here</p>
+          {/* <Link
             href="https://www.linkedin.com/in/jay-hogan-66610b90/"
             target="_blank"
           >
@@ -25,7 +26,7 @@ const Footer = () => {
             className="relative h-6 w-6"
           >
             <Github className="fill-primary-black-400 dark:fill-white" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </LightContainer>
