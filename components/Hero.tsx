@@ -1,12 +1,40 @@
 const Hero = () => {
   return (
-    <section className="flex h-[800px] w-full bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat">
-      <div className="flex h-[800px] w-full flex-col items-center md:flex-row md:justify-between">
-        <div className="bg-red-300">
-          <h1>Home</h1>
+    <section className="flex h-[500px] w-full items-center justify-center bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat lg:h-[800px]">
+      <div className="flex h-[500px] w-full max-w-[1440px] flex-col items-center justify-between px-6 py-10 md:px-14 lg:h-[800px] lg:flex-row lg:px-20">
+        <div className="flex w-full flex-col gap-2 sm:gap-5 lg:gap-10 ">
+          <h1 className="text-heading1 text-white sm:text-7xl md:text-8xl md:font-extrabold lg:text-9xl">
+            Tori Training
+          </h1>
+          <h2 className="w-full text-base-bold text-white sm:text-heading3 md:w-[600px]">
+            Unleash Your Potential with Expert Online Coaching
+          </h2>
         </div>
-        <div className="bg-blue-300">
-          <h1>Right Side</h1>
+        <div className="flex w-full flex-row gap-2 rounded-3xl bg-white p-5 dark:bg-primary-black-200 lg:w-64 lg:min-w-[256px] lg:flex-col lg:gap-10">
+          <div className="flex w-full flex-col items-center justify-start gap-2">
+            <p className="text-base-bold text-primary-blue-700 dark:text-primary-blue-300 sm:text-heading3">
+              50+
+            </p>
+            <p className="text-center text-small-bold sm:text-paragraph-regular">
+              Clients Coached
+            </p>
+          </div>
+          <div className="flex w-full flex-col items-center justify-start gap-2">
+            <p className="text-base-bold text-primary-blue-700 dark:text-primary-blue-300 sm:text-heading3">
+              10+
+            </p>
+            <p className="text-center text-small-bold sm:text-paragraph-regular">
+              Certifications
+            </p>
+          </div>
+          <div className="flex w-full flex-col items-center justify-start gap-2">
+            <p className="text-base-bold text-primary-blue-700 dark:text-primary-blue-300 sm:text-heading3">
+              3+
+            </p>
+            <p className="text-center text-small-bold sm:text-paragraph-regular">
+              Years of Experience
+            </p>
+          </div>
         </div>
       </div>
     </section>
