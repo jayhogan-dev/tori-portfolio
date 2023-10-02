@@ -15,9 +15,9 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex w-full max-w-[1580px] items-center justify-between px-6 py-8 md:px-10 lg:px-20">
+    <nav className="flex w-full max-w-[1580px] items-center justify-between px-6 py-4 md:px-10 lg:px-20">
       <Link href="/" className="relative h-10 w-10 rounded-lg hover:scale-110">
-        <Image src="/logo.svg" alt="logo" fill />
+        <Image src="/logo.png" alt="logo" fill />
       </Link>
       <article className="hidden md:flex md:items-center md:justify-between md:gap-5">
         <ul className="flex items-center justify-between gap-8 text-small-regular">

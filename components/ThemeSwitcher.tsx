@@ -53,12 +53,7 @@ const ThemeSwitcher = ({ setDarkMode }: ThemeSwitcherProps) => {
     <div className="flex items-center space-x-2">
       <Switch id="theme-mode" onCheckedChange={toggleTheme} />
       <Label htmlFor="theme-mode">
-        <Image
-          src={`/web-icons/${theme}.svg`}
-          alt="theme"
-          width={20}
-          height={20}
-        />
+        <Image src={`/theme/${theme}.svg`} alt="theme" width={20} height={20} />
       </Label>
     </div>
   );
