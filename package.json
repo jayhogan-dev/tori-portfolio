@@ -24,6 +24,7 @@
     "next": "latest",
     "prettier": "^3.0.3",
     "react": "latest",
+    "react-calendly": "^4.1.1",
     "react-dom": "latest",
     "react-hook-form": "^7.47.0",
     "tailwind-merge": "^1.14.0",
