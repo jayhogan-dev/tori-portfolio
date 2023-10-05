@@ -9,15 +9,24 @@ type PackageItemsOfferedProps = {
 
 interface PackageCardProps {
   packageTitle: string;
+  monthlyPrice: number;
   items: PackageItemsOfferedProps[];
 }
 
-const PackageCard = ({ packageTitle, items }: PackageCardProps) => {
+const PackageCard = ({
+  packageTitle,
+  monthlyPrice,
+  items,
+}: PackageCardProps) => {
   return (
     <article className="flex w-full flex-col items-center justify-start rounded-lg bg-primary-white-800 dark:bg-primary-black-300">
       <div className="flex w-full items-center justify-center rounded-t-lg bg-primary-blue-700 py-5 dark:bg-primary-blue-300">
         <h1 className="text-xl font-bold text-white">{packageTitle}</h1>
       </div>
+      <h2 className="pt-5 text-3xl font-semibold text-primary-blue-700 dark:text-primary-blue-300">
+        ${monthlyPrice}
+        <span className="text-lg">/month</span>
+      </h2>
       <div className="flex w-full py-5">
         <ul className="pl-8">
           {items.map((item) => (
@@ -40,7 +49,7 @@ const PackageCard = ({ packageTitle, items }: PackageCardProps) => {
         </ul>
       </div>
       <div className="my-5 flex h-full w-full items-end justify-center">
-        <Button variant="default">Book a Consultation</Button>
+        <Button variant="default">Get Started</Button>
       </div>
     </article>
   );

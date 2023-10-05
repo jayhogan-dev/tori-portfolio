@@ -46,7 +46,7 @@ export const trainingItems = [
   },
   {
     id: 2,
-    title: "Monthly video check-in",
+    title: "1 Monthly video check-in",
     type: "training",
   },
   {
@@ -74,7 +74,7 @@ export const nutritionItems = [
   },
   {
     id: 2,
-    title: "Bi-weekly video check-in",
+    title: "2 Monthly video check-ins",
     type: "nutrition",
   },
   {
@@ -111,14 +111,14 @@ export const bothPackageItems = [
     type: "nutrition",
   },
   {
-    id: 4,
-    title: "Bi-weekly video check-in",
-    type: "nutrition",
-  },
-  {
     id: 5,
     title: "Habit tracking",
     type: "nutrition",
+  },
+  {
+    id: 4,
+    title: "2 Monthly video check-ins",
+    type: "both",
   },
   {
     id: 6,
