@@ -28,7 +28,7 @@ const Navbar = () => {
                 className={cn(
                   "cursor-pointer hover:text-primary-black-300",
                   pathname === route.href
-                    ? "text-primary-blue-300 dark:text-primary-blue-700"
+                    ? "text-primary-blue-700 dark:text-primary-blue-300"
                     : "text-primary-white-500 dark:text-primary-white-800",
                 )}
               >
