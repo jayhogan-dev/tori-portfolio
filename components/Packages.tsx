@@ -17,24 +17,24 @@ const Packages = () => {
       <section className="flex flex-col items-center py-12 md:py-[72px]">
         <SectionTitle title="Packages" />
         <Tabs defaultValue="monthly" className="z-10 -mb-5">
-          <TabsList className="w-[200px]">
+          <TabsList className="w-[300px]">
             <TabsTrigger
               value="monthly"
               onClick={() => setActive("monthly")}
-              className="w-[100px]"
+              className="w-[150px]"
             >
-              Monthly
+              Billed Monthly
             </TabsTrigger>
             <TabsTrigger
               value="annually"
               onClick={() => setActive("annually")}
-              className="w-[100px]"
+              className="w-[150px]"
             >
-              Annually
+              Billed Annually
             </TabsTrigger>
           </TabsList>
         </Tabs>
-        <div className="grid w-full grid-cols-1 gap-5 rounded-xl bg-primary-white-800/40 p-14 dark:bg-primary-black-300/40 sm:grid-cols-3 sm:gap-5 md:gap-10">
+        <div className="grid w-full grid-cols-1 gap-5 rounded-xl bg-primary-white-800/40 px-5 py-14 dark:bg-primary-black-300/40 md:grid-cols-2 md:gap-10 md:p-14 lg:px-8 xl:grid-cols-3">
           <PackageCard
             packageTitle="Personalized Training"
             price={active === "monthly" ? 200 : 180}

@@ -24,7 +24,7 @@ const PackageCard = ({ packageTitle, price, items }: PackageCardProps) => {
         <span className="text-base font-light">/month</span>
       </h2>
       <div className="flex w-full py-5">
-        <ul className="pl-8">
+        <ul className="pl-3 sm:pl-8">
           {items.map((item) => (
             <li className="mb-3 flex gap-3" key={item.id}>
               <Image
@@ -39,7 +39,7 @@ const PackageCard = ({ packageTitle, price, items }: PackageCardProps) => {
                 height={20}
                 width={20}
               />
-              {item.title}
+              <span className="text-sm sm:text-base">{item.title}</span>
             </li>
           ))}
         </ul>

@@ -41,7 +41,7 @@ export const benefits = [
 export const trainingItems = [
   {
     id: 1,
-    title: "Personalized program made for you",
+    title: "Personalized training program",
     type: "training",
   },
   {
@@ -97,7 +97,7 @@ export const nutritionItems = [
 export const bothPackageItems = [
   {
     id: 1,
-    title: "Personalized program made for you",
+    title: "Personalized training program",
     type: "training",
   },
   {
