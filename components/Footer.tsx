@@ -1,4 +1,5 @@
 // import Link from "next/link";
+import Link from "next/link";
 import LightContainer from "./containers/Light";
 
 // SVGR
@@ -14,6 +15,10 @@ const Footer = () => {
         </p>
         <div className="flex items-center justify-center gap-5">
           <p>Add any Socials here</p>
+          {/* <p>Built By: </p>
+          <Link href="https://www.jayhogandev.com" target="_blank">
+            Jay Hogan
+          </Link> */}
           {/* <Link
             href="https://www.linkedin.com/in/jay-hogan-66610b90/"
             target="_blank"

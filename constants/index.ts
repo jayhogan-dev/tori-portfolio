@@ -37,3 +37,32 @@ export const benefits = [
       "Workout from home and seize ultimate flexibility. Set your own schedule, choose your environment, and eliminate commute time. Enjoy convenience without sacrificing results. Your fitness journey, your way!",
   },
 ];
+
+export const packageItems = [
+  {
+    training: [
+      {
+        title: "Personalized Training Program",
+      },
+      {
+        title: "Initial Setup Call",
+      },
+      {
+        title: "Weekly Checkins",
+      },
+    ],
+  },
+  {
+    nutrition: [
+      {
+        title: "Meal Plans",
+      },
+      {
+        title: "Initial Setup Call",
+      },
+      {
+        title: "Weekly Checkins",
+      },
+    ],
+  },
+];
