@@ -131,3 +131,26 @@ export const bothPackageItems = [
     type: "both",
   },
 ];
+
+export const certifications = [
+  {
+    prefix: "ACE",
+    name: "Certified Personal Trainer",
+  },
+  {
+    prefix: "NASM",
+    name: "Corrective Exercise Specialist",
+  },
+  {
+    prefix: "PN",
+    name: "Level 1 Nutrition Certification",
+  },
+  {
+    prefix: "dotFIT",
+    name: "Certified Practitioner",
+  },
+  {
+    prefix: "CRANKIT",
+    name: "Fitness Level 1 KettleBell",
+  },
+];
