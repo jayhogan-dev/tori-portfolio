@@ -8,7 +8,7 @@ const Certifications = () => {
     <DarkContainer>
       <section className="flex flex-col items-center py-12 md:py-[72px]">
         <SectionTitle title="Certifications" />
-        <div className="flex gap-5">
+        <div className="flex gap-8">
           {certifications.map((certification) => (
             <CertificationCircle
               key={certification.name}
