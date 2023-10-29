@@ -1,5 +1,4 @@
 // import Link from "next/link";
-import Link from "next/link";
 import LightContainer from "./containers/Light";
 
 // SVGR
