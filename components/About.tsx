@@ -6,7 +6,10 @@ import Certifications from "./Certifications";
 const About = () => {
   return (
     <DarkContainer>
-      <section className="flex flex-col items-center py-12 md:py-[72px]">
+      <section
+        className="flex flex-col items-center py-12 md:py-[72px]"
+        id="about"
+      >
         <SectionTitle title="About Tori" />
         <div className="grid grid-cols-2 justify-between gap-10">
           <div className="relative hidden sm:flex sm:h-full sm:w-full">

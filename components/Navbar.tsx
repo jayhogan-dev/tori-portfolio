@@ -23,8 +23,10 @@ const Navbar = () => {
         <ul className="flex items-center justify-between gap-8 text-small-regular">
           {routes.map((route) => (
             <li key={route.label}>
-              <Link
-                href={route.href}
+              <a
+                href={
+                  route.href.startsWith("/") ? route.href : `#${route.href}`
+                }
                 className={cn(
                   "cursor-pointer hover:text-primary-black-300",
                   pathname === route.href
@@ -33,7 +35,7 @@ const Navbar = () => {
                 )}
               >
                 {route.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

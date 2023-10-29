@@ -14,7 +14,10 @@ const Packages = () => {
 
   return (
     <LightContainer>
-      <section className="flex flex-col items-center py-12 md:py-[72px]">
+      <section
+        className="flex flex-col items-center py-12 md:py-[72px]"
+        id="packages"
+      >
         <SectionTitle title="Packages" />
         <Tabs defaultValue="monthly" className="z-10 -mb-5">
           <TabsList className="w-[300px]">
