@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
+import Link from "next/link";
 
 type PackageItemsOfferedProps = {
   id: number;
@@ -45,7 +46,16 @@ const PackageCard = ({ packageTitle, price, items }: PackageCardProps) => {
         </ul>
       </div>
       <div className="my-5 flex h-full w-full items-end justify-center">
-        <Button variant="default">Get Started</Button>
+        <Link
+          href="https://calendly.com/toritraining/consultation"
+          target="_blank"
+          className={buttonVariants({
+            variant: "default",
+            size: "sm",
+          })}
+        >
+          Get Started
+        </Link>
       </div>
     </article>
   );

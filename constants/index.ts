@@ -157,4 +157,28 @@ export const certifications = [
     prefix: "CRANKIT",
     name: "Fitness Level 1 KettleBell",
   },
+  {
+    prefix: "Animal",
+    name: "Animal Flow Level 1",
+  },
+  {
+    prefix: "Stick",
+    name: "Stick Mobility Level 1",
+  },
+  {
+    prefix: "RPM",
+    name: "Les Mills RPM",
+  },
+  {
+    prefix: "HIIT",
+    name: "StairMaster HIIT Instructor",
+  },
+  {
+    prefix: "Sprint",
+    name: "Les Mills Sprint Certification",
+  },
+  {
+    prefix: "TRX",
+    name: "TRX Suspension Qualification",
+  },
 ];
