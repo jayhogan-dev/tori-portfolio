@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <section className="flex h-[500px] w-full items-center justify-center bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat lg:h-[800px]">
@@ -9,6 +11,15 @@ const Hero = () => {
           <h2 className="w-full text-base-bold text-white sm:text-heading3 md:w-[600px]">
             Unleash Your Potential with Expert Online Coaching
           </h2>
+          <div className="w-1/3">
+            <Link
+              href="https://calendly.com/toritraining/consultation"
+              className="rounded-lg bg-primary-blue-300 p-5 text-center text-lg font-semibold text-white hover:bg-primary-blue-300/90 dark:bg-primary-blue-700 dark:hover:bg-primary-blue-700/90"
+              target="_blank"
+            >
+              Book a Free Consultation
+            </Link>
+          </div>
         </div>
         <div className="flex w-full flex-row gap-2 rounded-3xl bg-white p-5 dark:bg-primary-black-200 lg:w-64 lg:min-w-[256px] lg:flex-col lg:gap-10">
           <div className="flex w-full flex-col items-center justify-start gap-2">
