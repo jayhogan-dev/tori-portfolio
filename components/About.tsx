@@ -53,11 +53,11 @@ const About = () => {
             <p>
               But, fitness isn&apos;t just about exercise — it&apos;s a holistic
               approach. Coupled with workout routines, the right nutrition is
-              paramount. As a certified nutritionist in partnership with
-              Precision Nutrition, I emphasize a comprehensive coaching
-              approach. I&apos;ve incorporated essential habits and regular
-              personal check-ins to ensure my clients stay on course and
-              maintain their well-being.
+              paramount. As a certified nutritionist through Precision
+              Nutrition, I emphasize a comprehensive coaching approach.
+              I&apos;ve incorporated essential habits and regular personal
+              check-ins to ensure my clients stay on course and maintain their
+              well-being.
             </p>
             <br />
             <p>
