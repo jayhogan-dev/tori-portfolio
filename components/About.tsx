@@ -11,8 +11,8 @@ const About = () => {
         id="about"
       >
         <SectionTitle title="About Tori" />
-        <div className="grid grid-cols-2 justify-between gap-10">
-          <div className="relative hidden sm:flex sm:h-full sm:w-full">
+        <div className="flex flex-col items-center justify-between gap-10 xl:grid xl:grid-cols-2">
+          <div className="relative flex h-[400px] w-full sm:w-2/3 md:h-[600px] md:w-1/2 xl:h-full xl:w-full">
             <Image
               src="/about-tori.png"
               alt="picture of Tori"
@@ -20,7 +20,7 @@ const About = () => {
               className="rounded-3xl"
             />
           </div>
-          <div>
+          <div className="flex flex-col">
             <p>
               Hi! I&apos;m Viktoria, originally from the beautiful country of
               Sweden. I moved to the U.S. in 2014 for college, where my love for
