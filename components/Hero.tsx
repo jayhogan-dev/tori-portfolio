@@ -11,10 +11,10 @@ const Hero = () => {
           <h2 className="w-full text-base-bold text-white sm:text-heading3 md:w-[600px]">
             Unleash Your Potential with Expert Online Coaching
           </h2>
-          <div className="mt-3 w-full md:mt-0 md:w-1/3">
+          <div className="mt-3 w-full md:mt-1 md:w-2/3 xl:mt-0 xl:w-1/3">
             <Link
               href="https://calendly.com/toritraining/consultation"
-              className="rounded-lg bg-primary-blue-300 p-2 text-center text-sm font-semibold text-white hover:bg-primary-blue-300/90 dark:bg-primary-blue-700 dark:hover:bg-primary-blue-700/90 md:p-5 md:text-lg"
+              className="rounded-lg bg-primary-blue-300 p-2 text-center text-sm font-semibold text-white hover:bg-primary-blue-300/90 dark:bg-primary-blue-700 dark:hover:bg-primary-blue-700/90 sm:p-5 sm:text-lg"
               target="_blank"
             >
               Book a Free Consultation
