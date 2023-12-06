@@ -26,7 +26,7 @@ export const benefits = [
     icon: "/web-icons/users.svg",
     title: "1-on-1",
     description:
-      "1-on-1 personal training offers tailored workouts, precise form correction, and focused attention. Maximize results, prevent injuries, and stay motivated with a dedicated fitness expert by your side! Experience customized guidance for accelerated progress.",
+      "1-on-1 personal training offers tailored workouts, precise form correction, and focused attention during video check-ins. Maximize results, prevent injuries, and stay motivated with a dedicated fitness expert by your side! Experience customized guidance for accelerated progress.",
   },
   {
     icon: "/web-icons/notes-with-pencil.svg",

@@ -42,16 +42,19 @@ const Packages = () => {
             packageTitle="Personalized Training"
             price={active === "monthly" ? 200 : 180}
             items={trainingItems}
+            selected={active}
           />
           <PackageCard
             packageTitle="Nutrition Coaching"
             price={active === "monthly" ? 200 : 180}
             items={nutritionItems}
+            selected={active}
           />
           <PackageCard
             packageTitle="Training + Nutrition"
             price={active === "monthly" ? 350 : 315}
             items={bothPackageItems}
+            selected={active}
           />
         </div>
       </section>
