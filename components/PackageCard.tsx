@@ -47,14 +47,14 @@ const PackageCard = ({ packageTitle, price, items }: PackageCardProps) => {
       </div>
       <div className="my-5 flex h-full w-full items-end justify-center">
         <Link
-          href="https://calendly.com/toritraining/consultation"
+          href="https://calendar.app.google/BTNkgEKRTZTaDdkSA"
           target="_blank"
           className={buttonVariants({
             variant: "default",
             size: "sm",
           })}
         >
-          Get Started
+          Book Consultation
         </Link>
       </div>
     </article>
