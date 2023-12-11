@@ -22,10 +22,10 @@ const About = () => {
           </div>
           <div className="flex flex-col">
             <p>
-              Hi! I&apos;m Viktoria, originally from the beautiful country of
-              Sweden. I moved to the U.S. in 2014 for college, where my love for
-              soccer flourished. This journey further kindled my deep passion
-              for health and fitness.
+              Hi! I&apos;m Viktoria and I&apos;m originally from Sweden. I moved
+              to the U.S. in 2014 for college, where my love for soccer
+              flourished. This journey further kindled my deep passion for
+              health and fitness.
             </p>
             <br />
             <p>
