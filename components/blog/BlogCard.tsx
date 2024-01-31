@@ -21,7 +21,7 @@ const BlogCard = ({ title, subtitle, headerImage, slug }: BlogCardProps) => {
           width={300}
         />
       </CardHeader>
-      <CardContent className="flex items-center justify-center">
+      <CardContent className="flex flex-col items-center justify-center">
         <h3 className="mb-1 mt-8 text-paragraph-bold sm:mt-10 md:mt-0 md:text-base-bold">
           {title}
         </h3>
