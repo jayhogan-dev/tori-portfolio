@@ -26,16 +26,22 @@ const BlogPage = async () => {
       </DarkContainer>
       <LightContainer>
         <section className="flex flex-col items-center justify-center py-12 md:py-[72px]">
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-            {posts.map((post: any) => (
-              <BlogCard
-                key={post.sys.id}
-                title={post.fields.title}
-                headerImage={post.fields.image.fields.file.url}
-                slug={`/blog/${post.fields.slug}`}
-              />
-            ))}
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-10">
+            {posts.length > 0 &&
+              posts.map((post: any) => (
+                <BlogCard
+                  key={post.sys.id}
+                  title={post.fields.title}
+                  headerImage={post.fields.image.fields.file.url}
+                  slug={`/blog/${post.fields.slug}`}
+                />
+              ))}
           </div>
+          {posts.length < 1 && (
+            <div className="flex w-full items-center justify-center">
+              <p className="text-lg">No Blogs</p>
+            </div>
+          )}
         </section>
       </LightContainer>
     </main>
