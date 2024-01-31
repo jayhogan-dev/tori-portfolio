@@ -1,7 +1,17 @@
+import BlogCard from "@/components/blog/BlogCard";
 import DarkContainer from "@/components/containers/Dark";
 import LightContainer from "@/components/containers/Light";
+import { client } from "@/lib/contentful/client";
 
-const BlogPage = () => {
+async function getData() {
+  const data = await client.getEntries({ content_type: "post" });
+
+  return data.items;
+}
+
+const BlogPage = async () => {
+  const posts = await getData();
+
   return (
     <main className="flex flex-col">
       <DarkContainer>
@@ -16,7 +26,16 @@ const BlogPage = () => {
       </DarkContainer>
       <LightContainer>
         <section className="flex flex-col items-center justify-center py-12 md:py-[72px]">
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10"></div>
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+            {posts.map((post: any) => (
+              <BlogCard
+                key={post.sys.id}
+                title={post.fields.title}
+                headerImage={post.fields.image.fields.file.url}
+                slug={`/blog/${post.fields.slug}`}
+              />
+            ))}
+          </div>
         </section>
       </LightContainer>
     </main>
