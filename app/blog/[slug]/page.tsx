@@ -10,7 +10,7 @@ async function getData(slug: string) {
     "fields.slug": slug,
   });
 
-  return data.items;
+  return data.items[0];
 }
 
 const BlogSlugPage = async ({ params }: { params: { slug: string } }) => {
@@ -19,14 +19,14 @@ const BlogSlugPage = async ({ params }: { params: { slug: string } }) => {
   return (
     <div className="flex flex-col">
       <BlogHeader
-        title={post[0].fields.title}
-        subtitle={post[0].fields.subtitle}
-        category={post[0].fields.category}
-        headerImage={post[0].fields.image.fields.file.url}
+        title={post.fields.title}
+        subtitle={post.fields.subtitle}
+        category={post.fields.category}
+        headerImage={post.fields.image.fields.file.url}
       />
       <BlogContent
-        content={post[0].fields.content}
-        publishDate={post[0].fields.publishDate}
+        content={post.fields.content}
+        publishDate={post.fields.publishDate}
       />
     </div>
   );
