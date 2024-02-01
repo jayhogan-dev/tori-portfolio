@@ -5,20 +5,20 @@ export const routes = [
   },
   {
     label: "Packages",
-    href: "packages",
+    href: "/#packages",
   },
   {
     label: "About",
-    href: "about",
+    href: "/#about",
   },
   {
     label: "Contact",
-    href: "contact",
+    href: "/#contact",
   },
-  // {
-  //   label: "Blog",
-  //   href: "/blog",
-  // },
+  {
+    label: "Blog",
+    href: "/blog",
+  },
 ];
 
 export const benefits = [

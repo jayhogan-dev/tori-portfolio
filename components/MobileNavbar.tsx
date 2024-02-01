@@ -50,7 +50,7 @@ const MobileNavbar = () => {
               href="/"
               className="relative mb-5 h-10 w-10 rounded-lg hover:scale-110"
             >
-              <Image src="/logo.svg" alt="logo" fill />
+              <Image src="/logo.png" alt="logo" fill />
             </Link>
           </SheetClose>
         </SheetHeader>
