@@ -5,12 +5,21 @@ import { client } from "@/lib/contentful/client";
 export const revalidate = 500;
 
 async function getData(slug: string) {
-  const data = await client.getEntries({
-    content_type: "post",
-    "fields.slug": slug,
-  });
+  try {
+    const data = await client.getEntries({
+      content_type: "post",
+      "fields.slug": slug,
+    });
 
-  return data.items[0];
+    if (data.items.length === 0) {
+      return null;
+    }
+
+    return data.items[0];
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return null;
+  }
 }
 
 const BlogSlugPage = async ({ params }: { params: { slug: string } }) => {
