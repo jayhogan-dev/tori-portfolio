@@ -3,6 +3,8 @@ import DarkContainer from "@/components/containers/Dark";
 import LightContainer from "@/components/containers/Light";
 import { client } from "@/lib/contentful/client";
 
+export const revalidate = 500;
+
 async function getData() {
   const data = await client.getEntries({ content_type: "post" });
 
