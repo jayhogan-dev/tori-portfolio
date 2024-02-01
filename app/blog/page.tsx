@@ -26,7 +26,7 @@ const BlogPage = async () => {
       </DarkContainer>
       <LightContainer>
         <section className="flex flex-col items-center justify-center py-12 md:py-[72px]">
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-10">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-16 lg:grid-cols-3 lg:gap-10 xl:grid-cols-4 xl:gap-10">
             {posts.length > 0 &&
               posts.map((post: any) => (
                 <BlogCard

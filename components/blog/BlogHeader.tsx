@@ -28,12 +28,12 @@ const BlogHeader = ({
           </h2>
         </div>
         <div className="flex flex-row items-end">
-          <div className="relative h-52">
+          <div className="relative h-56">
             <ContentfulImage
               src={headerImage}
               className="rounded-lg"
-              height={400}
-              width={400}
+              height={300}
+              width={300}
             />
           </div>
         </div>
