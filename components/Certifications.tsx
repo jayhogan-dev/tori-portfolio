@@ -1,11 +1,11 @@
 import { certifications } from "@/constants";
 import SectionTitle from "./SectionTitle";
-import DarkContainer from "./containers/Dark";
 import CertificationCircle from "./CertificationCircle";
+import LightContainer from "./containers/Light";
 
 const Certifications = () => {
   return (
-    <DarkContainer>
+    <LightContainer>
       <section className="flex flex-col items-center py-12 md:py-[72px]">
         <SectionTitle title="Certifications" />
         <div className="flex flex-wrap items-center justify-center gap-8">
@@ -18,7 +18,7 @@ const Certifications = () => {
           ))}
         </div>
       </section>
-    </DarkContainer>
+    </LightContainer>
   );
 };
 

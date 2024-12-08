@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <div className="flex w-full flex-col items-center justify-start gap-2">
             <p className="text-base-bold text-primary-blue-700 dark:text-primary-blue-300 sm:text-heading3">
-              4+
+              5+
             </p>
             <p className="text-center text-small-bold sm:text-paragraph-regular">
               Years of Experience
