@@ -136,6 +136,39 @@ export const bothPackageItems = [
   },
 ];
 
+export const strengthTrainingCourseItems = [
+  {
+    id: 1,
+    title: "20 Lectures",
+    type: "training",
+  },
+  {
+    id: 2,
+    title: "Major movement patterns",
+    type: "training",
+  },
+  {
+    id: 3,
+    title: "Overview of strength training",
+    type: "training",
+  },
+  {
+    id: 4,
+    title: "Progressive Overload",
+    type: "training",
+  },
+  {
+    id: 5,
+    title: "Role of Nutrition",
+    type: "nutrttion",
+  },
+  {
+    id: 6,
+    title: "How to write a program",
+    type: "training",
+  },
+];
+
 export const certifications = [
   {
     prefix: "ACE",

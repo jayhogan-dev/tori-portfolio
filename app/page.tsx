@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Benefits from "@/components/Benefits";
 import Contact from "@/components/Contact";
+import Courses from "@/components/Courses";
 import Hero from "@/components/Hero";
 import Packages from "@/components/Packages";
 import Testimonials from "@/components/Testimonials";
@@ -20,6 +21,7 @@ export default async function Home() {
       <Hero />
       <Benefits />
       <Packages />
+      <Courses />
       <About />
       <Testimonials testimonials={testimonials} />
       <Contact />
