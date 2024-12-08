@@ -1,20 +1,20 @@
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
-import DarkContainer from "./containers/Dark";
 import Certifications from "./Certifications";
+import LightContainer from "./containers/Light";
 
 const About = () => {
   return (
-    <DarkContainer>
+    <LightContainer>
       <section
         className="flex flex-col items-center py-12 md:py-[72px]"
         id="about"
       >
         <SectionTitle title="About Tori" />
         <div className="flex flex-col items-center justify-between gap-10 xl:grid xl:grid-cols-2">
-          <div className="relative flex h-[400px] w-full sm:w-2/3 md:h-[600px] md:w-1/2 xl:h-full xl:w-full">
+          <div className="relative flex h-[600px] w-full sm:w-2/3 md:w-1/2 xl:w-full">
             <Image
-              src="/about-tori.png"
+              src="/about-tori.jpg"
               alt="picture of Tori"
               fill
               className="rounded-3xl"
@@ -61,7 +61,7 @@ const About = () => {
         </div>
         <Certifications />
       </section>
-    </DarkContainer>
+    </LightContainer>
   );
 };
 
