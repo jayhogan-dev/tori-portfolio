@@ -31,7 +31,7 @@ const TestimonialCard = ({
                 — {name}
               </p>
               <p className="text-body-regular text-primary-white-500 dark:text-primary-white-800">
-                {location} -
+                {location}
               </p>
             </footer>
           </blockquote>

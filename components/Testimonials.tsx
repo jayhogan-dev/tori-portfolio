@@ -40,7 +40,7 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
             </div>
             <div className="flex h-48 w-48 items-center justify-center rounded-xl bg-primary-blue-300 dark:bg-primary-blue-700">
               <h1 className="text-[100px] font-black text-white">
-                {testimonials[0].fields.name[0]}
+                {testimonials[activeTestimonial].fields.name[0]}
               </h1>
             </div>
             {/* Arrows controlled by state */}
