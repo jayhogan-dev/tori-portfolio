@@ -5,10 +5,24 @@ export interface EmailTemplateProps {
 }
 
 export interface Testimonial {
-  name: string;
-  review: string;
-  title: string;
-  company: string;
-  stars: number;
-  _id: string;
+  fields: {
+    name: string;
+    review: {
+      nodeType: string;
+      data: Record<string, unknown>;
+      content: Array<{
+        nodeType: string;
+        data: Record<string, unknown>;
+        content: Array<{
+          nodeType: string;
+          value: string;
+          marks: Array<Record<string, unknown>>;
+          data: Record<string, unknown>;
+        }>;
+      }>;
+    };
+    location: string;
+    stars: number;
+    _id: string;
+  };
 }

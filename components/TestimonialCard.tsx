@@ -2,20 +2,18 @@ import Stars from "./Stars";
 
 interface TestimonialCardProps {
   name: string;
-  review: string;
-  title: string;
+  review: any;
+  location: string;
   stars: number;
   isActive: boolean;
-  company: string;
 }
 
 const TestimonialCard = ({
   name,
   review,
-  title,
+  location,
   stars,
   isActive,
-  company,
 }: TestimonialCardProps) => {
   return (
     <>
@@ -33,10 +31,7 @@ const TestimonialCard = ({
                 — {name}
               </p>
               <p className="text-body-regular text-primary-white-500 dark:text-primary-white-800">
-                {title} -
-                <span className="pl-2 text-sm text-primary-white-500 dark:text-primary-white-800">
-                  {company}
-                </span>
+                {location} -
               </p>
             </footer>
           </blockquote>

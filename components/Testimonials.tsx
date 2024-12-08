@@ -29,7 +29,6 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
         <div className="w-72 sm:w-full">
           <SectionTitle title="What they say about me" />
         </div>
-        <div className="relative -right-[52px] -top-24 h-4 w-[150px] bg-gradient-to-r from-cyan-400 to-yellow-300 dark:from-cyan-800 dark:via-cyan-400 dark:to-yellow-300 sm:-left-10 sm:-right-0 sm:-top-14 lg:-left-[50px] lg:-top-[56px] lg:w-[200px]" />
         {/* Testimonials */}
         <article className="flex flex-col gap-5 md:w-full md:flex-row">
           <div className="flex items-start justify-between gap-5 md:items-center md:justify-center">
@@ -39,9 +38,9 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
                 iconUrl="/web-icons/carousel-left-arrow.svg"
               />
             </div>
-            <div className="bg-primary-blue-light dark:bg-primary-blue-dark flex h-48 w-48 items-center justify-center rounded-xl">
+            <div className="flex h-48 w-48 items-center justify-center rounded-xl bg-primary-blue-300 dark:bg-primary-blue-700">
               <h1 className="text-[100px] font-black text-white">
-                {testimonials[activeTestimonial].name[0]}
+                {testimonials[0].fields.name}
               </h1>
             </div>
             {/* Arrows controlled by state */}
@@ -61,12 +60,11 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
             <div className="md:w-4/5">
               {testimonials.map((testimonial, index) => (
                 <TestimonialCard
-                  key={testimonial._id}
-                  name={testimonial.name}
-                  review={testimonial.review}
-                  title={testimonial.title}
-                  company={testimonial.company}
-                  stars={testimonial.stars}
+                  key={testimonial.fields._id}
+                  name={testimonial.fields.name}
+                  review={testimonial.fields.review.content[0].content[0].value}
+                  location={testimonial.fields.location}
+                  stars={testimonial.fields.stars}
                   isActive={index === activeTestimonial}
                 />
               ))}
