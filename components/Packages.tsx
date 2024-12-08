@@ -40,19 +40,19 @@ const Packages = () => {
         <div className="grid w-full grid-cols-1 gap-5 rounded-xl bg-primary-white-800/40 px-5 py-14 dark:bg-primary-black-300/40 md:grid-cols-2 md:gap-10 md:p-14 lg:px-8 xl:grid-cols-3">
           <PackageCard
             packageTitle="Personalized Training"
-            price={active === "monthly" ? 200 : 180}
+            price={active === "monthly" ? 150 : 120}
             items={trainingItems}
             selected={active}
           />
           <PackageCard
             packageTitle="Nutrition Coaching"
-            price={active === "monthly" ? 200 : 180}
+            price={active === "monthly" ? 150 : 120}
             items={nutritionItems}
             selected={active}
           />
           <PackageCard
             packageTitle="Training + Nutrition"
-            price={active === "monthly" ? 350 : 315}
+            price={active === "monthly" ? 250 : 200}
             items={bothPackageItems}
             selected={active}
           />
