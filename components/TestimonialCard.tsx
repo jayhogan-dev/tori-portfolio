@@ -27,7 +27,7 @@ const TestimonialCard = ({
               {review}
             </p>
             <footer>
-              <p className="text-body-semibold text-primary-black-300 dark:text-white">
+              <p className="font-semibold text-primary-black-300 dark:text-white">
                 — {name}
               </p>
               <p className="text-body-regular text-primary-white-500 dark:text-primary-white-800">
