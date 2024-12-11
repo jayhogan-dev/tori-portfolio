@@ -5,6 +5,18 @@ export interface EmailTemplateProps {
 }
 
 export interface Testimonial {
+  sys: {
+    createdAt: string;
+    updatedAt: string;
+    id: string;
+    type: string;
+    locale: string;
+    space?: Record<string, unknown>;
+    environment?: Record<string, unknown>;
+    publishedVersion?: number;
+    revision?: number;
+    contentType?: Record<string, unknown>;
+  };
   fields: {
     name: string;
     review: {

@@ -9,17 +9,22 @@ import TestimonialCard from "./TestimonialCard";
 import IconButton from "./IconButton";
 
 const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
+  const sortedTestimonials = testimonials.sort(
+    (a, b) =>
+      new Date(a.sys.createdAt).getTime() - new Date(b.sys.createdAt).getTime(),
+  );
+
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
   const handlePrev = () => {
     setActiveTestimonial((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : testimonials.length - 1,
+      prevIndex > 0 ? prevIndex - 1 : sortedTestimonials.length - 1,
     );
   };
 
   const handleNext = () => {
     setActiveTestimonial((prevIndex) =>
-      prevIndex < testimonials.length - 1 ? prevIndex + 1 : 0,
+      prevIndex < sortedTestimonials.length - 1 ? prevIndex + 1 : 0,
     );
   };
 
@@ -40,7 +45,8 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
             </div>
             <div className="flex h-48 w-48 items-center justify-center rounded-xl bg-primary-blue-300 dark:bg-primary-blue-700">
               <h1 className="text-[100px] font-black text-white">
-                {testimonials[activeTestimonial].fields.name[0]}
+                {sortedTestimonials[activeTestimonial].fields.name[0]}{" "}
+                {/* Sorted testimonials */}
               </h1>
             </div>
             {/* Arrows controlled by state */}
@@ -58,9 +64,9 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
           </div>
           <div className="md:ml-5 md:flex md:w-full md:items-center md:justify-center">
             <div className="md:w-4/5">
-              {testimonials.map((testimonial, index) => (
+              {sortedTestimonials.map((testimonial, index) => (
                 <TestimonialCard
-                  key={testimonial.fields.name}
+                  key={testimonial.sys.id}
                   name={testimonial.fields.name}
                   review={testimonial.fields.review.content[0].content[0].value}
                   location={testimonial.fields.location}
