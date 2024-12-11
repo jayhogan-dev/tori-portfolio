@@ -60,7 +60,7 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
             <div className="md:w-4/5">
               {testimonials.map((testimonial, index) => (
                 <TestimonialCard
-                  key={testimonial.fields._id}
+                  key={testimonial.fields.name}
                   name={testimonial.fields.name}
                   review={testimonial.fields.review.content[0].content[0].value}
                   location={testimonial.fields.location}
