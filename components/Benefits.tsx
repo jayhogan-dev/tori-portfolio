@@ -1,11 +1,11 @@
 import { benefits } from "@/constants";
 import BenefitsCard from "./BenefitsCard";
 import SectionTitle from "./SectionTitle";
-import DarkContainer from "./containers/Dark";
+import LightContainer from "./containers/Light";
 
 const Benefits = () => {
   return (
-    <DarkContainer>
+    <LightContainer>
       <section className="flex flex-col items-center justify-center py-12 md:py-[72px]">
         <SectionTitle title="Benefits of Online Coaching" />
         <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-10">
@@ -23,7 +23,7 @@ const Benefits = () => {
           ))}
         </div>
       </section>
-    </DarkContainer>
+    </LightContainer>
   );
 };
 

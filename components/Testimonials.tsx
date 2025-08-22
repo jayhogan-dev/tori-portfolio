@@ -1,12 +1,12 @@
 "use client";
 
-import DarkContainer from "./containers/Dark";
 import SectionTitle from "./SectionTitle";
 
 import { useState } from "react";
 import { Testimonial } from "@/types";
 import TestimonialCard from "./TestimonialCard";
 import IconButton from "./IconButton";
+import LightContainer from "./containers/Light";
 
 const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
   const sortedTestimonials = testimonials.sort(
@@ -29,7 +29,7 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
   };
 
   return (
-    <DarkContainer>
+    <LightContainer>
       <section className="flex flex-col items-center justify-center py-12 md:py-[72px]">
         <div className="w-72 sm:w-full">
           <SectionTitle title="What they say about me" />
@@ -84,7 +84,7 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
           </div>
         </article>
       </section>
-    </DarkContainer>
+    </LightContainer>
   );
 };
 

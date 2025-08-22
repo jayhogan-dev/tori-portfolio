@@ -1,10 +1,10 @@
 import ContactForm from "./ContactForm";
 import SectionTitle from "./SectionTitle";
-import LightContainer from "./containers/Light";
+import DarkContainer from "./containers/Dark";
 
 const Contact = () => {
   return (
-    <LightContainer>
+    <DarkContainer>
       <section
         className="flex flex-col items-center py-12 md:py-[72px]"
         id="contact"
@@ -14,7 +14,7 @@ const Contact = () => {
           <ContactForm />
         </div>
       </section>
-    </LightContainer>
+    </DarkContainer>
   );
 };
 

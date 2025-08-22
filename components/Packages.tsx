@@ -3,17 +3,17 @@
 import { trainingItems, nutritionItems, bothPackageItems } from "@/constants";
 import PackageCard from "./PackageCard";
 import SectionTitle from "./SectionTitle";
-import LightContainer from "./containers/Light";
 
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { useState } from "react";
+import DarkContainer from "./containers/Dark";
 
 const Packages = () => {
   const [active, setActive] = useState("monthly");
 
   return (
-    <LightContainer>
+    <DarkContainer>
       <section
         className="flex flex-col items-center py-12 md:py-[72px]"
         id="packages"
@@ -58,7 +58,7 @@ const Packages = () => {
           />
         </div>
       </section>
-    </LightContainer>
+    </DarkContainer>
   );
 };
 

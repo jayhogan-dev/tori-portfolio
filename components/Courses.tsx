@@ -1,11 +1,11 @@
 import { strengthTrainingCourseItems } from "@/constants";
 import SectionTitle from "./SectionTitle";
-import DarkContainer from "./containers/Dark";
 import CourseCard from "./CourseCard";
+import LightContainer from "./containers/Light";
 
 const Courses = () => {
   return (
-    <DarkContainer>
+    <LightContainer>
       <section
         className="flex flex-col items-center py-12 md:py-[72px]"
         id="courses"
@@ -22,7 +22,7 @@ const Courses = () => {
           <div />
         </div>
       </section>
-    </DarkContainer>
+    </LightContainer>
   );
 };
 
