@@ -11,7 +11,8 @@ const Footer = () => {
     <LightContainer>
       <div className="flex flex-col items-center justify-center px-6 py-12 md:flex-row md:items-start md:justify-between">
         <p className="mb-4 text-body-regular text-primary-black-400 dark:text-primary-white-800">
-          &copy; 2024 Tori. All rights reserved
+          &copy; {new Date().getFullYear()} Tori Training LLC. All rights
+          reserved.
         </p>
         <div className="flex items-center justify-center gap-5">
           <Link
