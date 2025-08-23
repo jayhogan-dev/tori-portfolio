@@ -3,6 +3,7 @@ import Benefits from "@/components/Benefits";
 import Contact from "@/components/Contact";
 import Courses from "@/components/Courses";
 import Hero from "@/components/Hero";
+import HowItWorks from "@/components/HowItWorks";
 import Packages from "@/components/Packages";
 import Testimonials from "@/components/Testimonials";
 import { client } from "@/lib/contentful/client";
@@ -19,6 +20,7 @@ export default async function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
+      <HowItWorks />
       <Benefits />
       <Packages />
       <Courses />
