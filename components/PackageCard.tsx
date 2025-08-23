@@ -65,7 +65,7 @@ const PackageCard = ({
             size: "sm",
           })}
         >
-          Book Consultation
+          Book a Call
         </Link>
       </div>
     </article>

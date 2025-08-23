@@ -30,8 +30,8 @@ const About = () => {
             <p>
               I became an ACE Certified Personal Trainer in 2019, and in 2021, I
               earned my Corrective Exercise Specialist certification through
-              NASM. In 2024, I started Tori Training to help people worldwide
-              find confidence in their fitness journey.
+              NASM. In 2025, I started Tori Training LLC to help people
+              worldwide find confidence in their fitness journey.
             </p>
             <br />
             <p>
@@ -48,7 +48,8 @@ const About = () => {
               Fitness isn&apos;t just about workouts, though. Nutrition plays a
               huge role, which is why I also became certified through Precision
               Nutrition. My coaching focuses on creating lasting habits and
-              providing ongoing support through check-ins to keep you on track.
+              providing ongoing support through check-ins to keep you on track
+              without obsessing over calories.
             </p>
             <br />
             <p>
