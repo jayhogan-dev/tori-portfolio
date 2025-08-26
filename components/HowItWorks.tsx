@@ -1,7 +1,7 @@
 import React from "react";
-import DarkContainer from "./containers/Dark";
 import SectionTitle from "./SectionTitle";
 import HowItWorksList from "./HowItWorksList";
+import LightContainer from "./containers/Light";
 
 const items = [
   {
@@ -28,7 +28,7 @@ const items = [
 
 const HowItWorks = () => {
   return (
-    <DarkContainer>
+    <LightContainer>
       <section className="flex flex-col items-center justify-center py-12 md:py-[72px]">
         <SectionTitle title="How It Works" />
         <div className="flex flex-col">
@@ -51,7 +51,7 @@ const HowItWorks = () => {
           </div>
         </div>
       </section>
-    </DarkContainer>
+    </LightContainer>
   );
 };
 

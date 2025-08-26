@@ -1,11 +1,11 @@
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import Certifications from "./Certifications";
-import DarkContainer from "./containers/Dark";
+import LightContainer from "./containers/Light";
 
 const About = () => {
   return (
-    <DarkContainer>
+    <LightContainer>
       <section
         className="flex flex-col items-center py-12 md:py-[72px]"
         id="about"
@@ -62,7 +62,7 @@ const About = () => {
         </div>
         <Certifications />
       </section>
-    </DarkContainer>
+    </LightContainer>
   );
 };
 
