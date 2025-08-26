@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
+import { FC } from "react";
 
 export type PackageCardProps = {
   title: string;
@@ -17,7 +18,7 @@ export type PackageCardProps = {
   className?: string;
 };
 
-const PackageCard: React.FC<PackageCardProps> = ({
+const PackageCard: FC<PackageCardProps> = ({
   title,
   pricePerMonth,
   paidInFullNote,
