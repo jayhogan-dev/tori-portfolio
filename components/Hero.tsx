@@ -8,10 +8,10 @@ const Hero = () => {
           <h1 className="text-heading1 text-white sm:text-7xl md:text-8xl md:font-extrabold lg:text-9xl">
             Tori Training
           </h1>
-          <h2 className="w-full text-base-bold text-white sm:text-heading3 md:w-[600px]">
-            Unleash Your Potential with Expert Online Coaching
+          <h2 className="w-full text-base-bold text-white sm:text-heading3 md:w-[800px]">
+            Training and Nutrition Coaching for Women
           </h2>
-          <div className="mt-3 w-full md:mt-1 md:w-2/3 xl:mt-0 xl:w-1/3">
+          <div className="mt-3 w-full md:mt-5 md:w-2/3 xl:w-1/3">
             <Link
               href="https://calendar.app.google/BTNkgEKRTZTaDdkSA"
               className="rounded-lg bg-primary-blue-300 p-2 text-center text-sm font-semibold text-white hover:bg-primary-blue-300/90 dark:bg-primary-blue-700 dark:hover:bg-primary-blue-700/90 sm:p-5 sm:text-lg"

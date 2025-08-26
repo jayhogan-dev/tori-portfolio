@@ -1,12 +1,12 @@
 "use client";
 
-import DarkContainer from "./containers/Dark";
 import SectionTitle from "./SectionTitle";
 
 import { useState } from "react";
 import { Testimonial } from "@/types";
 import TestimonialCard from "./TestimonialCard";
 import IconButton from "./IconButton";
+import DarkContainer from "./containers/Dark";
 
 const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
   const sortedTestimonials = testimonials.sort(

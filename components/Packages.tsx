@@ -1,17 +1,72 @@
-"use client";
-
-import { trainingItems, nutritionItems, bothPackageItems } from "@/constants";
 import PackageCard from "./PackageCard";
 import SectionTitle from "./SectionTitle";
+
 import LightContainer from "./containers/Light";
 
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-import { useState } from "react";
+const plans = [
+  {
+    title: "Month-to-Month",
+    pricePerMonth: 275,
+    tagline: "Stay consistent without long-term lock-in",
+    taglineIcon: "🌀",
+    bullets: [
+      "Total flexibility",
+      "Keep building on the habits you’ve started",
+      "Adjust as life changes — coaching on your terms",
+      "Great for women who want accountability but prefer short commitments",
+    ],
+    ctaHref:
+      "https://calendar.google.com/appointments/schedules/AcZssZ2mP5sjzW3zLi07wecXPzm0MLpmwFYNN5bmQxqf5nZB_w7S8yeMRluupSEIsLvLWqZKuGIfPePJ",
+  },
+  {
+    title: "3 Months",
+    pricePerMonth: 250,
+    paidInFullNote: "Paid in full at $750",
+    tagline: "Kickstart transformation and build habits",
+    taglineIcon: "💪",
+    bullets: [
+      "Learn the foundations of sustainable nutrition & training",
+      "Start feeling stronger and more energized",
+      "Build consistency and confidence in the gym & kitchen",
+      "Perfect if you are ready to commit and see real change",
+    ],
+    recommended: true,
+    ctaHref:
+      "https://calendar.google.com/appointments/schedules/AcZssZ2mP5sjzW3zLi07wecXPzm0MLpmwFYNN5bmQxqf5nZB_w7S8yeMRluupSEIsLvLWqZKuGIfPePJ",
+  },
+  {
+    title: "6 Months",
+    pricePerMonth: 235,
+    paidInFullNote: "Paid in full at $1,400",
+    tagline: "Go deeper and lock in results",
+    taglineIcon: "🪴",
+    bullets: [
+      "Double your progress with steady, structured coaching",
+      "More time to master nutrition habits and mindset shifts",
+      "See visible changes in strength, energy, and body composition",
+      "Accountability for the long haul, not just a quick fix",
+    ],
+    ctaHref:
+      "https://calendar.google.com/appointments/schedules/AcZssZ2mP5sjzW3zLi07wecXPzm0MLpmwFYNN5bmQxqf5nZB_w7S8yeMRluupSEIsLvLWqZKuGIfPePJ",
+  },
+  {
+    title: "12 Months",
+    pricePerMonth: 225,
+    paidInFullNote: "Paid in full at $2,700",
+    tagline: "The ultimate transformation journey",
+    taglineIcon: "🌟",
+    bullets: [
+      "Reset your health and mindset",
+      "Maximize fat loss while building lasting muscle & strength",
+      "Maintain results long-term",
+      "Lifelong habits, confidence, and freedom with food & fitness",
+    ],
+    ctaHref:
+      "https://calendar.google.com/appointments/schedules/AcZssZ2mP5sjzW3zLi07wecXPzm0MLpmwFYNN5bmQxqf5nZB_w7S8yeMRluupSEIsLvLWqZKuGIfPePJ",
+  },
+];
 
 const Packages = () => {
-  const [active, setActive] = useState("monthly");
-
   return (
     <LightContainer>
       <section
@@ -19,43 +74,10 @@ const Packages = () => {
         id="packages"
       >
         <SectionTitle title="Packages" />
-        <Tabs defaultValue="monthly" className="z-10 -mb-5">
-          <TabsList className="w-[300px]">
-            <TabsTrigger
-              value="monthly"
-              onClick={() => setActive("monthly")}
-              className="w-[150px]"
-            >
-              Billed Monthly
-            </TabsTrigger>
-            <TabsTrigger
-              value="annually"
-              onClick={() => setActive("annually")}
-              className="w-[150px]"
-            >
-              Billed Annually
-            </TabsTrigger>
-          </TabsList>
-        </Tabs>
-        <div className="grid w-full grid-cols-1 gap-5 rounded-xl bg-primary-white-800/40 px-5 py-14 dark:bg-primary-black-300/40 md:grid-cols-2 md:gap-10 md:p-14 lg:px-8 xl:grid-cols-3">
-          <PackageCard
-            packageTitle="Personalized Training"
-            price={active === "monthly" ? 150 : 120}
-            items={trainingItems}
-            selected={active}
-          />
-          <PackageCard
-            packageTitle="Nutrition Coaching"
-            price={active === "monthly" ? 150 : 120}
-            items={nutritionItems}
-            selected={active}
-          />
-          <PackageCard
-            packageTitle="Training + Nutrition"
-            price={active === "monthly" ? 250 : 200}
-            items={bothPackageItems}
-            selected={active}
-          />
+        <div className="mx-auto grid grid-cols-1 gap-6 px-6 py-10 sm:grid-cols-2 xl:grid-cols-4">
+          {plans.map((p) => (
+            <PackageCard key={p.title} {...p} />
+          ))}
         </div>
       </section>
     </LightContainer>
